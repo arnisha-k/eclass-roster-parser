@@ -11,7 +11,7 @@ const rows = document.querySelectorAll('tr[id^="user-index-participants-"][class
 
 rows.forEach(row => {
     // Excludes TAs and Instructors
-    if (row.childNodes[4].innerText.trim() === "Student") {
+    if (row.childNodes[5].innerText.trim() === "Student") {
 
         // student name
         student = row.childNodes[1].innerText;
@@ -23,7 +23,7 @@ rows.forEach(row => {
         email = row.childNodes[3].innerText;
 
         // td element with 2 div children
-        enrolled = row.childNodes[7];
+        enrolled = row.childNodes[8];
 
         // first child is lab
         lab = enrolled.childNodes[0];
